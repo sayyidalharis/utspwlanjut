@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Users</title>
+
+	<link rel="stylesheet" href="main.css" />
+</head>
+<body>
+	<header>
+		<h1>Data Mata Kuliah</h1>
+	</header>
+	<main>
+        <div id="pencarian" style="margin-top: 25px; margin-bottom: 25px;">
+            <label for="dicari">Pencarian</label> <select name="pilihan" id="pilihan">
+                <option value="kodek">Kode Kelas</option>
+                <option value="namak">Nama Kelas</option>
+                <option value="kodemk">Kode Matakuliah</option>
+                <option value="namak">Nama Matakuliah</option>
+                <option value="sks">Jumlah SKS</option>
+            </select><br><br>
+            <input placeholder="Masukkan kata pencarian" name="searchq" id="searchq" style="width:220px;"/> 
+            <p id="log" style="margin-top: 12px"></p>
+        </div>
+        <li>
+            <a onclick="DalamProdiNew()">Dalam Prodi</a>
+        </li>
+        <li>
+            <a onclick="LuarProdiNew()">Luar Prodi</a>
+        </li>
+        <div id="table">
+            
+        </div>
+		<div class="list" id="list">
+        </div>
+        <a style="margin-top: 30px;"> Page ke : </a>
+		<div class="pagenumbers" id="pagination">
+        </div>
+        <a> Banyak row : </a></div>
+		<div class="rownumbers" id="rowing">
+	</main>
+	<script src="tabeldata2.js"></script>
+</body>
+</html>
